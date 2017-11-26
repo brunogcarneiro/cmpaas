@@ -9,13 +9,7 @@
 {% block content %}
   <div class="container conteudo">
     <h3 id="title" contenteditable="false">Name of the map</h3>
-    <div style="margin-top:60px">
-      <span>Visibility: </span> 
-      <input type="checkbox" value="classes" checked="true" onclick="toggleVisible('classLayer', event)" /> Classes | 
-      <input type="checkbox" value="individuals" checked="true" onclick="toggleVisible('individualLayer', event)"/> Individuals |
-      <input type="checkbox" value="attributes" checked="true" onclick="toggleVisible('attributeLayer', event)"/>  Attributes
-    </div>
-    <div id="myDiagram" class="editor" style="margin-top:0px"></div>
+    <div id="myDiagram" class="editor"></div>
     <button id="saveButton" type="submit" class="btn btn-default">Save</button>
     <button id="loadButton" type="submit" class="btn btn-default">Load</button>
     <button id="exportButton" type="submit" class="btn btn-default">Export Map in OWL Ontology</button>
@@ -24,10 +18,6 @@
 
 {% block javascript %}
   <script src="{% static 'go/go-debug.js' %}"></script>
-  <script src="{% static 'ontomap/declarations.js' %}"></script>
-  <script src="{% static 'ontomap/nodeTemplates.js' %}"></script>
-  <script src="{% static 'ontomap/linkTemplates.js' %}"></script>
-  <script src="{% static 'ontomap/listeners.js' %}"></script>
   <script src="{% static 'ontomap/ontoeditor.js' %}"></script>
   <script src="{% static 'ontomap/main.js' %}"></script>
 {% endblock %}
