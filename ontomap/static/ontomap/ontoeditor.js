@@ -49,10 +49,10 @@ CMPAAS.editor = function() {
 
     // ################## PRIVATE ##################
 
-    // funÁ„o que serializa o JSON: apenas retira a propriedade 'class' do objeto
+    // fun√ß√£o que serializa o JSON: apenas retira a propriedade 'class' do objeto
     function serialize(){
       var obj = myDiagram.model.toJson();
-      obj = obj.replace("\"class\": \"go.GraphLinksModel\",",""); //verificar se h· necessidade de retirar essa parte
+      obj = obj.replace("\"class\": \"go.GraphLinksModel\",",""); //verificar se h√° necessidade de retirar essa parte
       return obj;
     }
 
